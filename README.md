@@ -33,11 +33,10 @@ It detects hand landmarks, counts the number of fingers raised, and identifies w
 ## 📂 Project Structure
 ```text
 .
-├── 📁 notebooks/              # CV practice notebooks
+├── 📁 notebooks/
 │   ├── Haar_Cascades.ipynb
 │   ├── RGB.ipynb
-├── main.py                   # Hand recognition script
-├── requirements.txt
+│   ├── Hand_Recognition.ipynb
 └── README.md
 ```
 
