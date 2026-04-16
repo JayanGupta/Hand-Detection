@@ -1,18 +1,45 @@
-# Hand Recognition System
+<div align="center">
+  
+  # ✋ Hand Recognition System
 
-This project builds a hand recognition model using computer vision techniques to detect and track hand gestures in real-time. The system detects the number of fingers raised and whether the thumb is up, providing useful information for gesture-based applications.
+  [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+  [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org)
+  [![MediaPipe](https://img.shields.io/badge/MediaPipe-FF6F00?style=for-the-badge&logo=google&logoColor=white)](https://mediapipe.dev)
+  [![cvzone](https://img.shields.io/badge/cvzone-00A86B?style=for-the-badge&logo=python&logoColor=white)](https://pypi.org/project/cvzone/)
+  [![Pillow](https://img.shields.io/badge/Pillow-8B008B?style=for-the-badge&logo=python&logoColor=white)](https://python-pillow.org)
 
-## Project Overview
+  *A real-time computer vision system for detecting hand gestures and finger counts using webcam input.*
+</div>
 
-The Hand Recognition System uses a webcam feed to capture images and detect hand landmarks using the **MediaPipe** library. The model processes these landmarks to count the number of fingers raised and check if the thumb is up, displaying the results in real-time.
+---
 
-## Features
+## 📖 Overview
+This project implements a **real-time hand recognition system** using computer vision techniques.  
 
-* Real-time hand detection and tracking using MediaPipe.
-* Detection of up to two hands with finger counting.
-* Thumb detection to identify if the thumb is raised.
-* Visual representation of hand landmarks on the webcam feed.
-* Outputs the number of fingers raised and whether the thumb is up.
+It detects hand landmarks, counts the number of fingers raised, and identifies whether the thumb is up — enabling gesture-based interaction systems.
+
+---
+
+## 🚀 Features
+- ✋ Real-time hand detection and tracking  
+- ✌️ Detection of up to two hands  
+- 🔢 Finger counting using landmark positions  
+- 👍 Thumb detection (up/down state)  
+- 🎯 Visual overlay of hand landmarks  
+- 📺 Live output via webcam feed  
+
+---
+
+## 📂 Project Structure
+```text
+.
+├── 📁 notebooks/              # CV practice notebooks
+│   ├── Haar_Cascades.ipynb
+│   ├── RGB.ipynb
+├── main.py                   # Hand recognition script
+├── requirements.txt
+└── README.md
+```
 
 ## Notebooks
 
@@ -30,10 +57,8 @@ These notebooks are included to reflect my ongoing practice and understanding of
 * **OpenCV**: For capturing and processing the webcam feed.
 * **PIL (Pillow)**: For image manipulation and conversion.
 
-## Installation
+**Note**: Ensure your webcam is enabled. The system will:
 
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/hand-recognition.git
-cd hand-recognition
+- Detect hands in real-time
+- Display finger count
+- Identify thumb position
